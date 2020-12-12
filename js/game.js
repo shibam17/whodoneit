@@ -30,8 +30,13 @@ function dataDisplay (e){
     clue = e["clue"];
     console.log(clue);
     hintText.innerHTML = clue;
+    const codeSlug = e["code"]
+    checkClue(codeSlug);
 }
 
+function checkClue(e){
+    console.log(e);
+}
 
 
 window.onload = gameClue();
