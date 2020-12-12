@@ -5,7 +5,7 @@
 .game__page {
   display: grid;
   place-items: center;
-  background-color: #bdcf2e;
+  /* background-color: #bdcf2e; */
   background: url(../video/Matrix\ -\ 25695.mp4);
   height: 100vh;
 }
