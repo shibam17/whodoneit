@@ -8,10 +8,11 @@
 	padding: 40px 0;
 }
 
-.userInput, .game__heading{
+.game__heading, .userInput{
 	display: flex;
 	justify-content: center;
 }
+
 
 input{
 	margin: 10px;
@@ -42,3 +43,4 @@ input{
 	outline: none;
 	border-radius: 20px;
 }
+
