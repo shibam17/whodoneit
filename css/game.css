@@ -1,0 +1,25 @@
+body{
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+
+}
+
+.container{
+	display: flex;
+	flex-flow: column;
+	height: 100%;
+	align-items: space-around;
+	justify-content: center;
+}
+
+.userInput{
+	display: flex;
+	justify-content: center;
+}
+
+input{
+	margin: 10px;
+	height: 35px;
+	width: 65px;
+	border: none;
