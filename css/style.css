@@ -31,3 +31,10 @@
   padding-left: 10px;
   padding-top: 20px;
 }
+
+.game__list{
+  padding-left: 30px;
+  padding-top: 30px;
+  font-size: 2rem;
+  max-width: 500px;
+}

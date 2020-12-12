@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Game Start</title>
     <link rel="stylesheet" href="./css/whole.css" />
-    <link rel="stylesheet" href="./css/game.css">
+    <link rel="stylesheet" href="./css/game.css" />
   </head>
   <body>
     <div class="game__page">
@@ -17,26 +17,42 @@
         muted
       ></video>
       <div class="game__screen">
+        <h1>Guess Who??</h1>
         <div class="game__heading">
-            <h1>Guess Who??</h1>
         </div>
-        <div class="game__clue">
-            
-        </div>
+        <div class="game__clue"></div>
         <div class="game__input">
-            <div class="container">
-		<h1>ENTER CODE</h1>
-		<div class="userInput">
-			<input type="number" id='ist' maxlength="1" onkeyup="clickEvent(this,'ist')">
-			<input type="number" id="sec" maxlength="1" onkeyup="clickEvent(this,'sec')">
-			<input type="number" id="third" maxlength="1" onkeyup="clickEvent(this,'third')">
-			<input type="number" id="fourth" maxlength="1" onkeyup="clickEvent(this,'fourth')">
-		</div>
-		<button>CHECK</button>
-	</div>
+          <h1>ENTER CODE</h1>
+          <div class="userInput">
+            <input
+              type="number"
+              id="ist"
+              maxlength="1"
+              onkeyup="clickEvent(this,'ist')"
+            />
+            <input
+              type="number"
+              id="sec"
+              maxlength="1"
+              onkeyup="clickEvent(this,'sec')"
+            />
+            <input
+              type="number"
+              id="third"
+              maxlength="1"
+              onkeyup="clickEvent(this,'third')"
+            />
+            <input
+              type="number"
+              id="fourth"
+              maxlength="1"
+              onkeyup="clickEvent(this,'fourth')"
+            />
+          </div>
+          
         </div>
         <div class="game__check">
-
+            <button>CHECK</button>
         </div>
       </div>
     </div>
