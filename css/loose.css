@@ -1,0 +1,84 @@
+#mySidenav a {
+    position: absolute;
+    /* Position them relative to the browser window */
+    left: -80px;
+    /* Position them outside of the screen */
+    transition: 0.3s;
+    /* Add transition on hover */
+    padding: 15px;
+    /* 15px padding */
+    width: 100px;
+    /* Set a specific width */
+    text-decoration: underline;
+    /* Remove underline */
+    font-size: 25px;
+    /* Increase font size */
+    color: white;
+    /* White text color */
+    font-weight: bold;
+    font-size: medium;
+    font-variant: inherit;
+    border-radius: 0 5px 5px 0;
+    /* Rounded corners on the top right and bottom right side */
+}
+
+#mySidenav a:hover {
+    left: 0px;
+    /* On mouse-over, make the elements appear as they should */
+}
+
+
+/* The about link: 20px from the top with a green background */
+
+#about {
+    top: 20px;
+    background-color: #eb1656;
+}
+
+#blog {
+    top: 80px;
+    background-color: rgb(14, 63, 238);
+    /* Blue */
+}
+
+.game__screen {
+    background-position: relative;
+    background-repeat: repeat;
+    background-color: rgb(2, 47, 53);
+}
+
+.loose {
+    background-position: 20px;
+}
+
+h1 {
+    font-size: 50px;
+    margin-top: -500px;
+    color: rgb(33, 19, 241);
+    margin-bottom: 800px;
+    background-color: rgb(248, 244, 13);
+    outline-color: rgb(231, 22, 22);
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: rgb(255, 2, 2);
+    margin-left: 650px;
+    margin-right: 200px;
+    width: 500px;
+    height: 200px;
+    padding: 20px 10px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 2px snow;
+}
+
+img {
+    width: 50%;
+    height: 50%;
+}
+
+img.loose__img{
+    border-radius: 20px;
+}
+
+img.loose__img1{
+    /* width: 20%; */
+}

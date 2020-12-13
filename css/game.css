@@ -1,51 +1,230 @@
-.game__heading{
-	padding: 30px 0;
-}
-
-.game__clue{
-	display: flex;
-	justify-content: center;
-	padding: 40px 0;
-}
-
-.game__heading, .userInput{
-	display: flex;
-	justify-content: center;
-}
-
-.game__clueText{
-	padding: 0 30px;
-	text-align: center;
-	line-height:1.4 ;
-}
-
-input{
-	margin: 10px;
-	height: 35px;
-	width: 65px;
-	border: none;
-	outline: none;
-}
-
-.game__input > h1{
-	display: flex;
-	justify-content: center;
-}
-
-.game__input{
-	padding-top: 30px;
-	padding-bottom: 30px;
-}
-
-.game__check{
-	display: flex;
-	justify-content: center;
-	padding: 30px 0;
-}
-
-.game__check >button{
-	padding: 20px 30px;
-	outline: none;
-	border-radius: 20px;
-}
-
+    .game__heading {
+        padding: 30px 0;
+    }
+    
+    #mySidenav a {
+        position: absolute;
+        /* Position them relative to the browser window */
+        left: -80px;
+        /* Position them outside of the screen */
+        transition: 0.5s;
+        /* Add transition on hover */
+        padding: 15px;
+        /* 15px padding */
+        width: 100px;
+        /* Set a specific width */
+        text-decoration: underline;
+        /* Remove underline */
+        font-size: 25px;
+        /* Increase font size */
+        color: white;
+        /* White text color */
+        font-weight: bold;
+        font-size: medium;
+        border-radius: 0 5px 5px 0;
+        /* Rounded corners on the top right and bottom right side */
+    }
+    
+    #mySidenav a:hover {
+        left: 0;
+        /* On mouse-over, make the elements appear as they should */
+    }
+    /* The about link: 20px from the top with a green background */
+    
+    #about {
+        top: 20px;
+        background-color: #eb1656;
+    }
+    
+    #blog {
+        top: 80px;
+        background-color: rgb(74, 14, 238);
+        /* Blue */
+    }
+    
+    .button {
+        position: fixed;
+        text-align: center;
+        font-size: 42px;
+        font-family: 'Raleway', sans-serif;
+        color: hsl(0, 5%, 4%);
+        width: 210px;
+        height: 90px;
+        font-size: 35px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        background-color: rgb(14, 175, 68);
+        margin-top: calc(50vh - 75px);
+        margin-left: calc(100vw - 200px);
+        border-radius: 30px;
+        text-shadow: 0px 5px hsla(333, 20%, 76%, 0.842), 0px 10px 10px rgba(238, 67, 15, 0.2);
+        box-shadow: 0px 0px 0px 15px hsl(61, 94%, 52%), 0px 10px 0px 15px hsla(108, 66%, 20%, 0.74), 0px 20px 20px 15px rgba(38, 126, 12, 0.863);
+        cursor: pointer;
+        margin-left: 15px;
+        margin-top: 10px;
+        border-radius: 100px 30px 100px 30px;
+        margin-bottom: 25px;
+    }
+    
+    .button p {
+        margin-top: 30px;
+        transform: rotate(-4deg);
+    }
+    
+    .button:hover {
+        animation: .8s morph ease infinite;
+    }
+    
+    .button:hover p {
+        animation: .8s rot ease infinite;
+    }
+    
+    @keyframes morph {
+        0% {
+            border-radius: 80px 30px 80px 30px;
+        }
+        50% {
+            border-radius: 30px 80px 30px 80px;
+        }
+        100% {
+            border-radius: 80px 30px 80px 30px;
+        }
+    }
+    
+    @keyframes rot {
+        0% {
+            transform: rotate(-4deg);
+        }
+        50% {
+            transform: rotate(4deg);
+        }
+        100% {
+            transform: rotate(-4deg);
+        }
+    }
+    
+    @import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
+    h3 {
+        font-size: calc(13px + 13vh);
+        line-height: calc(20px + 20vh);
+        /*   text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+    0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092;
+  color: #fccaff; */
+        text-shadow: 0 0 7px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+        color: #fff6a9;
+        font-family: "Sacramento", cursive;
+        text-align: center;
+        animation: blink 7s infinite;
+        -webkit-animation: blink 7s infinite;
+        margin-bottom: 12px;
+    }
+    
+    @-webkit-keyframes blink {
+        10%,
+        12%,
+        28% {
+            color: #111;
+            text-shadow: none;
+        }
+        0%,
+        8%,
+        11%,
+        12%,
+        13%,
+        27%,
+        28%,
+        50% {
+            /*     color: #fccaff;
+      text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+        0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
+            text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+            color: #fff6a9;
+        }
+    }
+    
+    body {
+        margin-top: -70px;
+    }
+    
+    @keyframes blink {
+        10%,
+        12%,
+        28% {
+            color: #111;
+            text-shadow: none;
+        }
+        0%,
+        8%,
+        11%,
+        12%,
+        13%,
+        27%,
+        28%,
+        50% {
+            /*     color: #fccaff;
+      text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+        0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
+            text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+            color: #fff6a9;
+        }
+    }
+    
+    .game__page {
+        color: hsl(149, 82%, 11%);
+        margin-top: 50px;
+        background-position: relative;
+    }
+    
+    .game__clue {
+        display: flex;
+        justify-content: center;
+        padding: 40px 0;
+    }
+    
+    .game__screen {
+        color: rgb(227, 228, 185);
+        background-image: url('kiki.jpg');
+    }
+    
+    .game__heading,
+    .userInput {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .game__clueText {
+        padding: 0 30px;
+        text-align: center;
+        line-height: 1.4;
+        margin-bottom: -20px;
+    }
+    
+    input {
+        margin: 10px;
+        height: 40px;
+        width: 75px;
+        border: none;
+        outline: none;
+    }
+    
+    .game__input>h1 {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .game__input {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    
+    .game__check {
+        display: flex;
+        justify-content: center;
+        padding: 20px 0;
+    }
+    
+    .game__check>button {
+        padding: 20px 30px;
+        outline: none;
+        border-radius: 20px;
+        margin-bottom: 10px;
+    }

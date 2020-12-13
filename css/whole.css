@@ -1,24 +1,45 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-.game__page {
-  display: grid;
-  place-items: center;
-  /* background-color: #bdcf2e; */
-  background: url(../video/Matrix\ -\ 25695.mp4);
-  height: 100vh;
+
+#mySidenav a:hover {
+    left: 0;
+    /* On mouse-over, make the elements appear as they should */
 }
 
-.game__video{
+
+/* The about link: 20px from the top with a green background */
+
+#about {
+    top: 20px;
+    background-color: #eb1656;
+}
+
+#blog {
+    top: 80px;
+    background-color: rgb(14, 74, 238);
+    /* Blue */
+}
+
+.game__page {
+    display: grid;
+    place-items: center;
+    /* background-color: #bdcf2e; */
+    background: url(../video/Matrix\ -\ 25695.mp4);
+    height: 100vh;
+    background-size: cover;
+}
+
+.game__video {
     object-fit: cover;
     position: fixed;
     z-index: -1;
 }
 
-.game__screen{
+.game__screen {
     background-color: #ededed;
-  height: 90vh;
-  width: 90vw;
-  box-shadow: 8px 4px 50px 8px rgba(89, 204, 104, 0.781);
+    height: 90vh;
+    width: 90vw;
+    box-shadow: 8px 4px 50px 8px rgba(89, 204, 104, 0.781);
 }

@@ -1,40 +1,250 @@
-.game__initial {
-  display: flex;
-  height: 100%;
-}
-
-.game__start {
-  min-width: 500px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.game__start > button {
-  margin: auto;
-  padding: 20px 30px;
-  align-items: center;
-  justify-content: center;
-  vertical-align: middle;
-  border-radius: 20px;
-  outline: none;
-  cursor: pointer;
-}
-.game__start > h1{
-    padding-top: 20px;
-    padding-left: 30px;
-  }
-  
-
-.game__instruction {
-  border-left: 2px solid black;
-  padding-left: 10px;
-  padding-top: 20px;
-}
-
-.game__list{
-  padding-left: 30px;
-  padding-top: 30px;
-  font-size: 2rem;
-  max-width: 500px;
-}
+    .game__initial {
+        display: flex;
+        height: 100%;
+    }
+    
+    .button {
+        position: fixed;
+        text-align: center;
+        font-size: 42px;
+        font-family: 'Raleway', sans-serif;
+        color: hsl(355, 88%, 43%);
+        width: 250px;
+        height: 90px;
+        font-size: 35px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        background-color: rgb(225, 240, 25);
+        margin-top: calc(50vh - 75px);
+        margin-left: calc(100vw - 200px);
+        border-radius: 30px;
+        text-shadow: 0px 5px hsla(0, 5%, 89%, 0.842), 0px 10px 10px rgba(42, 199, 27, 0.2);
+        box-shadow: 0px 0px 0px 15px hsl(103, 93%, 52%), 0px 10px 0px 15px hsl(139, 73%, 17%), 0px 20px 20px 15px rgba(205, 15, 15, 0.2);
+        cursor: pointer;
+        margin-left: 120px;
+        margin-top: 300px;
+        border-radius: 100px 30px 100px 30px;
+    }
+    
+    .b {
+        background-color: rgb(4, 63, 28);
+        color: rgb(204, 171, 24);
+        font-size: 35px;
+    }
+    
+    .game__start {
+        background: rgba(13, 14, 13, 0.986);
+        font-size: 15px;
+    }
+    
+    h1 {
+        position: absolute;
+        top: 10%;
+        left: 4%;
+    }
+    
+    h1 span {
+        color: #27c5da;
+        background: rgba(230, 42, 98, 0.787);
+        padding: 10px 20px;
+        display: table-cell;
+        box-shadow: inset 0 0 5px rgba(235, 212, 9, 0.924), 0 5px 0 rgb(231, 150, 20);
+        animation: animate 0.5s infinite;
+    }
+    /* Specify the animation keyframes 
+         to be used to move the letters */
+    
+    @keyframes animate {
+        0% {
+            transform: translateY(0px);
+        }
+        50% {
+            transform: translateY(-20px);
+        }
+        100% {
+            transform: translateY(0px);
+        }
+    }
+    /* Specify a slight delay for 
+         each of the letters */
+    
+    h1 span:nth-child(1) {
+        animation-delay: 0.1s;
+    }
+    
+    h1 span:nth-child(2) {
+        animation-delay: 0.2s;
+    }
+    
+    h1 span:nth-child(3) {
+        animation-delay: 0.3s;
+    }
+    
+    h1 span:nth-child(4) {
+        animation-delay: 0.4s;
+    }
+    
+    h1 span:nth-child(5) {
+        animation-delay: 0.5s;
+    }
+    
+    h1 span:nth-child(6) {
+        animation-delay: 0.6s;
+    }
+    
+    h1 span:nth-child(7) {
+        animation-delay: 0.7s;
+    }
+    
+    h1 span:nth-child(8) {
+        animation-delay: 0.8s;
+    }
+    
+    h1 span:nth-child(9) {
+        animation-delay: 0.9s;
+    }
+    
+    h1 span:nth-child(10) {
+        animation-delay: 1s;
+    }
+    
+    h1 span:nth-child(11) {
+        animation-delay: 1.1s;
+    }
+    
+    h1 span:nth-child(12) {
+        animation-delay: 1.2s;
+    }
+    
+    h1 span:nth-child(13) {
+        animation-delay: 1.3s;
+    }
+    
+    .button p {
+        margin-top: 30px;
+        transform: rotate(-4deg);
+    }
+    
+    .button:hover {
+        animation: .8s morph ease infinite;
+    }
+    
+    .button:hover p {
+        animation: .8s rot ease infinite;
+    }
+    
+    @keyframes morph {
+        0% {
+            border-radius: 80px 30px 80px 30px;
+        }
+        50% {
+            border-radius: 30px 80px 30px 80px;
+        }
+        100% {
+            border-radius: 80px 30px 80px 30px;
+        }
+    }
+    
+    @keyframes rot {
+        0% {
+            transform: rotate(-4deg);
+        }
+        50% {
+            transform: rotate(4deg);
+        }
+        100% {
+            transform: rotate(-4deg);
+        }
+    }
+    
+    .game__start {
+        min-width: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    /*The about link: 20px from the top with a green background */
+    
+    .game__start>button {
+        margin: auto;
+        padding: 20px 30px;
+        align-items: center;
+        justify-content: center;
+        vertical-align: middle;
+        border-radius: 20px;
+        outline: none;
+        cursor: pointer;
+    }
+    
+    #mySidenav a {
+        position: absolute;
+        /* Position them relative to the browser window */
+        left: -80px;
+        /* Position them outside of the screen */
+        transition: 0.3s;
+        /* Add transition on hover */
+        padding: 15px;
+        /* 15px padding */
+        width: 100px;
+        /* Set a specific width */
+        text-decoration: underline;
+        /* Remove underline */
+        font-size: 25px;
+        /* Increase font size */
+        color: white;
+        /* White text color */
+        font-weight: bold;
+        font-size: medium;
+        border-radius: 0 5px 5px 0;
+        /* Rounded corners on the top right and bottom right side */
+    }
+    
+    #mySidenav a:hover {
+        left: 0;
+        /* On mouse-over, make the elements appear as they should */
+    }
+    /* The about link: 20px from the top with a green background */
+    
+    #about {
+        top: 20px;
+        background-color: #eb1656;
+    }
+    
+    #blog {
+        top: 80px;
+        background-color: rgb(18, 14, 238);
+        /* Blue */
+    }
+    
+    .game__start>h1 {
+        padding-top: 20px;
+        padding-left: 30px;
+    }
+    
+    .game__instruction {
+        border-left: 2px solid rgb(192, 64, 14);
+        padding-left: 10px;
+        padding-top: 20px;
+        margin-right: -50px;
+    }
+    
+    .game__list {
+        padding-left: 40px;
+        padding-top: 10px;
+        font-size: 35px;
+        background-color: rgba(54, 92, 5, 0.89);
+        color: #fbff0afb;
+        max-width: 680px;
+        max-height: 1400px;
+        padding-right: 15px;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+    }
+    
+    .game__initial {
+        background-color: rgba(218, 164, 49, 0.972);
+        font-size: 30px;
+        font-weight: bold;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: rgba(146, 5, 71, 0.897);
+    }
