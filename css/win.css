@@ -1,0 +1,51 @@
+#mySidenav a {
+    position: absolute;
+    /* Position them relative to the browser window */
+    left: -80px;
+    /* Position them outside of the screen */
+    transition: 0.3s;
+    /* Add transition on hover */
+    padding: 15px;
+    /* 15px padding */
+    width: 100px;
+    /* Set a specific width */
+    text-decoration: underline;
+    /* Remove underline */
+    font-size: 25px;
+    /* Increase font size */
+    color: white;
+    /* White text color */
+    font-weight: bold;
+    font-size: medium;
+    font-variant: inherit;
+    border-radius: 0 5px 5px 0;
+    /* Rounded corners on the top right and bottom right side */
+}
+
+#mySidenav a:hover {
+    left: 0;
+    /* On mouse-over, make the elements appear as they should */
+}
+
+
+/* The about link: 20px from the top with a green background */
+
+#about {
+    top: 20px;
+    background-color: #eb1656;
+}
+
+#blog {
+    top: 80px;
+    background-color: rgb(14, 74, 238);
+    /* Blue */
+}
+
+body {
+    padding: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-image: repeating-linear-gradient( to bottom, transparent 5px, rgba(0, 0, 0, 0.8) 7px, rgba(0, 0, 0, 0.8) 10px, transparent 10px);
+}
