@@ -40,3 +40,34 @@
     background-color: rgb(14, 63, 238);
     /* Blue */
 }
+
+.game__screen {
+    background-position: relative;
+    background-repeat: repeat;
+    background-color: rgb(2, 47, 53);
+}
+
+.loose {
+    background-position: 20px;
+}
+
+h1 {
+    font-size: 50px;
+    margin-top: -500px;
+    color: rgb(33, 19, 241);
+    margin-bottom: 800px;
+    background-color: rgb(248, 244, 13);
+    outline-color: rgb(231, 22, 22);
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: rgb(255, 2, 2);
+    margin-left: 550px;
+    margin-right: 200px;
+    width: 500px;
+    height: 200px;
+}
+
+img {
+    width: 50%;
+    height: 50%;
+}
