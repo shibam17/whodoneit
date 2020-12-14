@@ -1,3 +1,3 @@
 # whodoneit
-
-![Alt Text](https://www.animatedimages.org/img-animated-detective-image-0018-44926.htm)
+Hackathon (11 Dec-13 Dec)
+![Alt Text](https://media.giphy.com/media/2gtoSIzdrSMFO/giphy.gif)
